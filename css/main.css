@@ -1,0 +1,158 @@
+:root{
+    --main-color:#1E202B;
+    --main-text-color:#009AD8;
+    --footer-color:#262936;
+    --main-gray-color:rgb(169, 169, 169);
+
+}
+nav{
+    background-color: var(--main-color);
+}
+h1{
+    font-size: 16px;
+}
+nav .navbar-nav li {
+    padding: 5px;
+}
+nav span {
+    font-size: 10px;
+    font-weight: 300;
+}
+nav .navbar-nav a{
+   transition: 0.2s all;
+   border: 2px solid transparent;
+  padding-inline: 20px !important;
+}
+nav .navbar-nav a:hover , nav .active{
+    color: var(--main-text-color)!important;
+    border-color: var(--main-text-color); 
+    border-radius: 30px;
+    box-shadow: 0 0 5px #29ade1; 
+}
+
+
+
+/* ***home section*** */
+#home {
+   background-image: url('../imgs/banner.png');
+   background-size: cover;
+   min-height: 350px;
+   border: 1px solid transparent;
+}
+#home .search-city {
+    background-color: var(--main-color);
+    border: none;
+    color: #fff ;
+    width: 100%;
+}
+#home .search-city:focus ,footer form input:focus{
+    outline: none;
+}
+#home .search-input, footer .input-subscribe{
+    position: relative;
+}
+#home .search-input button, footer button {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+#home .today-weather {
+    background-color: var(--footer-color);
+    color: var(--main-gray-color);
+
+}
+#home .today-weather .title ,#home .after-tomorrow-title{
+    background-color: #2D303D;
+}
+#home .today-weather .today-content p {
+    font-size: 70px;
+    color: var(--main-gray-color);
+    font-weight: 700;
+}
+#home .next-weather-desc, .weather-desc {
+    color: var(--main-text-color);
+}
+#home .today-weather .today-header img {
+    width: 18px;
+}
+#home .full-content {
+    height: 400px;
+}
+#home .full-content .split{
+    height: 100%;
+}
+#home .next-min-temp {
+    font-size: 19px;
+}
+#home .tomorrow {
+    background-color: var(--main-color);
+    color: var(--main-gray-color);
+}
+#home .tomorrow-title {
+    background-color:#222530;
+    color: var(--main-gray-color);
+}
+#home .after-tomorrow {
+    background-color: var(--footer-color);
+    color: var(--main-gray-color);
+}
+
+footer{
+    background-color: var(--footer-color);
+    border: 1px solid transparent;
+    min-height: 200px;
+}
+footer .footer-split {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .footer-input {
+    width: 50%;
+}
+footer form input{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+footer .contact-links ul a{
+   padding: 10px 15px;
+   background-color: var(--main-color);
+   border-radius: 50%;
+   margin-inline: 3px;
+}
+footer p {
+    color: rgb(184, 180, 180);
+}
+footer form input:focus{
+    outline: none;
+}
+footer .input-subscribe{
+    position: relative;
+}
+footer button {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+@media(max-width: 991.98px) { 
+    #home .full-content {
+        height: 1200px;
+    }
+}
+
+@media (max-width: 767.98px) { 
+
+    footer .footer-input {
+        width: 100%;
+    }
+    .contact-links {
+        margin: auto;
+    }
+    
+ }
+
+

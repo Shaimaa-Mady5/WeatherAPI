@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="shortcut icon" href="imgs/2682834_cloud_day_forecast_rain_rainy_icon.ico" type="image/x-icon">
+
+
+                <!-- ** Font awesome CSS ** -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+                <!-- ** Bootstrap CSS ** -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+                <!-- ** Style CSS ** -->
+    <link rel="stylesheet" href="css/main.css">
+
+
+
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand text-white" href="#">
+                <div class="nav-logoo  d-flex justify-content-center align-items-center ">
+                    <div  class=" d-flex justify-content-end pe-2">
+                        <img class="w-50" src="imgs/logo@2x.png" alt="cloud-logo" >
+                    </div>
+                   <div class="logo-desc  ">
+                    <h1  class="mb-0">weather</h1>
+                    <span >tagline goes here</span>
+                   </div>
+                </div>
+          </a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="contact.html">Contact</a>
+              </li>
+             
+          </div>
+        </div>
+      </nav>
+
+
+      <header id="home" class="pb-5" >
+        <div class="container">
+            <form class="search-input my-5 ">
+                <input itemid="searchCity" class=" search-city  p-3 rounded-5" type="text" name="searchCity" id="searchCity" placeholder="find your location">
+                <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill">Find</button>
+            </form>
+
+            <div class="row full-content">
+                <div class="col-lg-4 mt-3 col-md-12 ">
+                    <div class="today-weather  pb-4 split">
+                        <div class="title p-2 d-flex justify-content-between">
+                            <h6 id="todayDay">Saturday</h6>
+                            <h6><span id="todayNumber">20 </span>
+                                <span id="todayMonth">January</span></h6>
+                        </div>
+                        <div class="descreption-weather px-3 py-4">
+                            <div class="city-name"> 
+                                <h6 class="fs-3" id="city">Cairo</h6></div>
+                            <div class="today-content d-flex justify-content-between ">                           
+                                <p class="text-white">
+                                    <span id="todayTemp">24</span>
+                                    <sup>o</sup>C</p>
+                                <img id="todayImg" src="imgs/122.png" alt="">
+                            </div>
+                            <div class="weather-desc mb-3" id="todayDesc">Clear</div>
+                            <div class="today-header d-flex gap-3">
+                                <div>
+                                    <img src="imgs/icon-umberella@2x.png" alt="">
+                                    <span id="humidity">20%</span>
+                                </div>
+                                <div>
+                                    <img src="imgs/icon-wind@2x.png" alt="">
+                                    <span id="windKm">18km/h</span>
+                                </div>
+                                <div>
+                                    <img src="imgs/icon-compass@2x.png" alt="">
+                                    <span id="windDirection">East</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-3 col-md-12">
+                   <div class="tomorrow split">
+                    <div class="tomorrow-title next-day py-2 text-center" >Sunday</div>
+                    <div class="tomorrow-content py-5 d-flex align-items-center flex-column">
+                        <div><img class="next-day-img" src="imgs/200.png" alt=""></div>
+                        <p class="text-white fs-3">
+                            <span class="next-temp">26.7</span>
+                            <sup>o</sup>C</p>
+                        <small><span class="next-min-temp">17.3</span>
+                            <sup>o</sup></small>
+                        <div class="next-weather-desc my-3">Clear</div>
+                    </div>
+                   </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mt-3">
+                   <div class="after-tomorrow split">
+                    <div class="after-tomorrow-title next-day py-2 text-center">Monday</div>
+                    <div class="tomorrow-content py-5 d-flex align-items-center flex-column">
+                        <div><img class="next-day-img" src="imgs/200.png" alt=""></div>
+                        <p class="text-white fs-3">
+                            <span class="next-temp">18.3</span>
+                            <sup>o</sup>C</p>
+                        <small><span class="next-min-temp">17.3</span>
+                            <sup>o</sup></small>
+                        <div class="next-weather-desc my-3">Clear</div>
+                    </div>
+                   </div>
+                </div>
+                
+            </div>
+        </div>
+       
+      </header>
+      <!-- <div class="layer"></div> -->
+      
+      <footer>
+        <div class="container">
+         <div class="footer-split mt-5 ">
+             <form class="footer-input mb-4">
+                 <div class="input-subscribe ">
+                     <input class="w-100 p-3 rounded-5 border-0 " type="email" name="email-subscribe" placeholder="Enter your Email to subscribe...">
+                     <button type="submit" class="btn btn-primary px-4 py-2 rounded-pill">Subscribe</button>
+                 </div>
+             </form>
+ 
+             <div class="contact-links ">
+                 <ul class="list-unstyled d-flex justify-content-center">
+                     <li>
+                         <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                     </li>
+                     <li>
+                         <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                     </li>
+                     <li>
+                         <a href="https://www.gmail.com/" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                     </li>
+                     <li>
+                         <a href="https://www.pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                     </li>
+                 </ul>
+             </div>
+         </div>
+         <p class="mt-4">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+       </footer>
+
+            <!-- ** Bootstrap JS ** -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+            <!-- ** Document JS ** -->
+    <script src="js/index.js"></script>
+</body>
+</html>

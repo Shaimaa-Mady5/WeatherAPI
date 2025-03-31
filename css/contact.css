@@ -1,0 +1,146 @@
+:root{
+    --main-color:#1E202B;
+    --main-text-color:#009AD8;
+    --footer-color:#262936;
+    --main-gray-color:rgb(169, 169, 169);
+}
+nav{
+    background-color: var(--main-color);
+}
+h1{
+    font-size: 16px;
+}
+nav .navbar-nav li {
+    padding: 5px;
+}
+nav span {
+    font-size: 10px;
+    font-weight: 300;
+}
+nav .navbar-nav a{
+   transition: 0.2s all;
+   border: 2px solid transparent;
+  padding-inline: 20px !important;
+}
+nav .navbar-nav a:hover , nav .active{
+    color: var(--main-text-color)!important;
+    border-color: var(--main-text-color); 
+    border-radius: 30px;
+    box-shadow: 0 0 5px #29ade1; 
+}
+
+section {
+    background-color: var(--main-color); 
+    padding: 10px 0 70px 0;
+}
+section .navigate-home {
+    height: 50px;
+    background-color: var(--footer-color);
+}
+section .navigate-home i,  section .navigate-home a{
+color: var(--main-gray-color);
+}
+section .contact-left {
+    background-color: var(--footer-color);
+}
+section .contact-left i {
+    color: var(--main-text-color);
+    margin-right: 5px;
+}
+section .contact-left .phone-mail {
+    display: flex;
+}
+section .contact-left span, section .contact-left p ,section .right p{
+    color: var(--main-gray-color);
+}
+section .right {
+    padding-inline: 30px;
+}
+section .right input ,section .right textarea {
+    background-color: transparent;
+    border: 2px solid var(--main-gray-color);
+    border-radius: 30px;
+    margin: 10px 5px;
+    padding: 10px 20px;
+    color: #fff;
+    transition: 0.3s all;
+}
+section .right input {
+    width: 45%; 
+}
+section .right textarea{
+    width: 95%;
+    height: 120px;
+}
+section .right input:hover ,  section .right textarea:hover{
+    border-color: var(--main-text-color);
+}
+section .right input:focus ,  section .right textarea:focus{
+    outline: 2px solid var(--main-text-color);
+   border-color: transparent;
+  
+}
+
+
+
+/* ***footer*** */
+footer{
+    background-color: var(--footer-color);
+    border: 1px solid transparent;
+    min-height: 200px;
+}
+footer .footer-split {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .footer-input {
+    width: 50%;
+}
+footer form input{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+footer .contact-links ul a{
+   padding: 10px 15px;
+   background-color: var(--main-color);
+   border-radius: 50%;
+   margin-inline: 3px;
+}
+footer p {
+    color: rgb(184, 180, 180);
+}
+footer form input:focus{
+    outline: none;
+}
+footer .input-subscribe{
+    position: relative;
+}
+footer button {
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+
+@media (max-width: 991.98px) { 
+    section .contact-left .phone-mail {
+        display: block;
+        
+    }
+   
+ }
+@media (max-width: 767.98px) { 
+    section .right input ,section .right textarea  {
+        width: 100%;
+    }
+    footer .footer-input {
+        width: 100%;
+    }
+    .contact-links {
+        margin: auto;
+    }
+    
+ }
